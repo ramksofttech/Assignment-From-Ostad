@@ -20,13 +20,6 @@ Also do the same using while loop and do-while loop also.
 echo PHP_EOL;
 
 
-input(1, 20, 2);
-function input($startPoint, $endPoint, $step)
-{
-    evenNumber($startPoint, $endPoint, $step);
-    evenNumberWhile($startPoint, $endPoint, $step);
-    evenNumberDoWhile($startPoint, $endPoint, $step);
-}
 
 function evenNumber($startPoint, $endPoint, $step)
 {
@@ -46,7 +39,7 @@ function evenNumber($startPoint, $endPoint, $step)
             }
         }
     }
-
+    
     echo PHP_EOL;
     echo PHP_EOL;
     echo "===========For Loop End==========\n";
@@ -60,14 +53,14 @@ function evenNumberWhile($startPoint, $endPoint, $step)
 {
     echo PHP_EOL;
     echo "===========While Loop Start==========\n\n";
-
+    
     $i = $startPoint;
-
+    
     while ($i <= $endPoint) {
-
+        
         if ($i % 2 != 0) {
             echo $i+1;
-
+            
             for ($j = 1; $j <= $i - 1; $j++) {
             }
             if ($j == $endPoint) {
@@ -76,17 +69,17 @@ function evenNumberWhile($startPoint, $endPoint, $step)
                 echo ", ";
             }
         }
-
+        
         $i = $i + $step;
-
+        
 
     }
-
-
-
+    
+    
+    
     echo PHP_EOL;
     echo PHP_EOL;
-
+    
     echo "===========While Loop End==========\n";
 }
 
@@ -96,11 +89,11 @@ function evenNumberDoWhile($startPoint, $endPoint, $step)
 {
     echo PHP_EOL;
     echo "===========Do While Loop Start==========\n\n";
-
+    
     $i = $startPoint;
     do {
         if ($i % 2 != 0) {
-
+            
             echo $i+1;
             for ($j = 1; $j <= $i - 1; $j++) {
             }
@@ -113,10 +106,19 @@ function evenNumberDoWhile($startPoint, $endPoint, $step)
         $i = $i + $step;
     } while ($i <= $endPoint);
 
-
+    
     echo PHP_EOL;
     echo PHP_EOL;
     
     echo "===========Do While Loop End==========\n";
     echo PHP_EOL;
 }
+
+function input($startPoint, $endPoint, $step)
+{
+    evenNumber($startPoint, $endPoint, $step);
+    evenNumberWhile($startPoint, $endPoint, $step);
+    evenNumberDoWhile($startPoint, $endPoint, $step);
+}
+
+input(1, 20, 2);

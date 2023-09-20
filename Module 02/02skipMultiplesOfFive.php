@@ -11,18 +11,13 @@ using the continue statement and continue to the next iteration.
 
 echo PHP_EOL;
 
-input(1, 50, 5);
-function input($startPoint, $endPoint, $condition)
-{
-    allNumber($startPoint, $endPoint, $condition);
-}
 
 function allNumber($startPoint, $endPoint, $condition)
 {
     echo "===========For Loop Start==========\n\n";
-
+    
     for ($i = $startPoint; $i <= $endPoint; $i++) {
-
+        
         if($i % $condition == 0){
             continue;
         }
@@ -39,8 +34,15 @@ function allNumber($startPoint, $endPoint, $condition)
             echo ", ";
         }
     }
-
+    
     echo PHP_EOL;
     echo PHP_EOL;
     echo "===========For Loop End==========\n";
 }
+
+function input($startPoint, $endPoint, $condition)
+{
+    allNumber($startPoint, $endPoint, $condition);
+}
+
+input(1, 50, 5);

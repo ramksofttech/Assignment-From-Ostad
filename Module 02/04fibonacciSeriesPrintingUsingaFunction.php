@@ -14,11 +14,7 @@ them by calling the function.
 
 echo PHP_EOL;
 
-input(0, 1, 1, 15);
-function input($veryOld, $old, $new, $lenth)
-{
-    fibonacci($veryOld, $old, $new, $lenth);
-}
+
 
 function fibonacci($veryOld, $old, $new, $lenth)
 {
@@ -29,8 +25,6 @@ function fibonacci($veryOld, $old, $new, $lenth)
         $veryOld = $old;
         $old = $new;
         $new = $veryOld + $old;
-
-        
     }
 
     echo PHP_EOL;
@@ -38,3 +32,10 @@ function fibonacci($veryOld, $old, $new, $lenth)
     echo "===========For Loop End==========\n";
 }
 
+
+function input($veryOld, $old, $new, $lenth)
+{
+    fibonacci($veryOld, $old, $new, $lenth);
+}
+
+input(0, 1, 1, 15);
