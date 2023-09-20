@@ -61,7 +61,7 @@ function evenNumberWhile($startPoint, $endPoint, $step)
         if ($i % 2 != 0) {
             echo $i+1;
             
-            for ($j = 1; $j <= $i - 1; $j++) {
+            for ($j = 1; $j <= $i; $j++) {
             }
             if ($j == $endPoint) {
                 echo ".";
@@ -95,7 +95,7 @@ function evenNumberDoWhile($startPoint, $endPoint, $step)
         if ($i % 2 != 0) {
             
             echo $i+1;
-            for ($j = 1; $j <= $i - 1; $j++) {
+            for ($j = 1; $j <= $i; $j++) {
             }
             if ($j == $endPoint) {
                 echo ".";
