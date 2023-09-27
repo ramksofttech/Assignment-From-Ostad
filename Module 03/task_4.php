@@ -38,14 +38,13 @@ function calculateAverageGrades($studentGrades)
 
         if (!empty($invalidMarks)) {
             echo "==========$key==========\n";
-            echo "<br>";
-            echo "Check your Marks\n";
-            echo "<br>";
-            echo "Wrong inputs are following: ";
-            echo "<br>";
-            echo implode("\n <br>", $invalidMarks) . "\n\n";
-            echo "<br>";
-            echo "<br>";
+
+            echo "Check your Marks\n\n";
+
+            echo "Wrong inputs are following: \n";
+
+            echo implode("\n", $invalidMarks) . "\n\n";
+
             continue;
         }
 
@@ -68,21 +67,15 @@ function calculateAverageGrades($studentGrades)
         }
 
         echo "==========$key==========\n";
-        echo "<br>";
+
         echo "Average Marks: $average\n";
-        echo "<br>";
+
         echo "Grade: $grade\n\n";
-        echo "<br>";
-        echo "<br>";
     }
 }
 
 
 calculateAverageGrades($studentGrades);
-
-
-
-
 
 
 echo PHP_EOL;
