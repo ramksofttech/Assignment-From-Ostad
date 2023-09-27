@@ -4,9 +4,8 @@
 /* 
 
 Write a PHP program that calculates and prints the first 10 Fibonacci numbers. 
-But, if a
-Fibonacci number is greater than 100, 
-break out of the loop using the break statement.
+But, if a 
+Fibonacci number is greater than 100, break out of the loop using the break statement.
 
 */
 
@@ -28,10 +27,11 @@ function fibonacci($veryOld, $old, $new, $lenth, $condition)
             break;
         }
     }
-
+    
     echo PHP_EOL;
     echo PHP_EOL;
     echo "===========For Loop End==========\n";
+
 }
 
 
@@ -41,4 +41,4 @@ function input($veryOld, $old, $new, $lenth, $condition)
 }
 
 
-input(1, 5, 6, 10, 100);
+input(0, 1, 1, 10, 100);
