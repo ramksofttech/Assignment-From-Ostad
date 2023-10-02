@@ -1,13 +1,14 @@
 <?php
 
-
-class Product {
+class Product
+{
     // TODO: Add properties
-    public $id;
-    public $name;
-    public $price;
-    
-    public function __construct($id, $name, $price) {
+    public int $id;
+    public string $name;
+    public float $price;
+
+    public function __construct(int $id, string $name, float $price)
+    {
         // TODO: Initialize properties
         $this->id = $id;
         $this->name = $name;
@@ -16,12 +17,14 @@ class Product {
 
 
     // TODO: Add getFormattedPrice method
-    public function getFormattedPrice(){
-        return number_format($this->price,2);
+    public function getFormattedPrice()
+    {
+        return number_format($this->price, 2);
     }
 
     // TODO: Add showDetails method
-    public function showDetails(){
+    public function showDetails()
+    {
         echo "Product Details: \n";
         echo "- ID: {$this->id} \n";
         echo "- Name: {$this->name} \n";
